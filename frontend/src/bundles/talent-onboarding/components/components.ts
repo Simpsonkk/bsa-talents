@@ -1,0 +1,11 @@
+export { CandidateParameter } from '../../candidate-details/components/candidate-profile/candidate-parameter/candidate-parameter.js';
+export { CandidateProfile } from '../../candidate-details/components/candidate-profile/candidate-profile.js';
+export { ProfileFirstSection } from '../../candidate-details/components/candidate-profile/profile-first-section/profile-first-section.js';
+export { ProfileSecondSection } from '../../candidate-details/components/candidate-profile/profile-second-section/profile-second-section.js';
+export { BadgesStep } from './badges-step/badges-step.js';
+export { ContactsCVStep } from './contacts-cv-step/contacts-cv-step.js';
+export { ProfileStep } from './profile-step/profile-step.js';
+export { SkillsStep } from './skills-step/skills-step.js';
+export { StepContent } from './step-content/step-content.js';
+export { StepNavigation } from './step-navigation/step-navigation.js';
+export { Steps } from './steps/steps.js';

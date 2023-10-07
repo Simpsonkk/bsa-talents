@@ -1,0 +1,126 @@
+:root {
+    // *Basic Colors*
+
+    // Red
+    --torch-red: #ff2121;
+
+    // Azure
+    --azure: #2e61ae;
+
+    // Vivid
+    --vivid: #18a0fb;
+
+    // White
+    --white: #ffffff;
+    --white-lilac: #f7f8fc;
+
+    // St Tropaz
+    --st-tropaz: #274f8d;
+
+    // Gray
+    --gray-1: #aab1bb;
+    --gray-2: #828282;
+    --steel-gray: #1f1e29;
+    --slate-gray: #7c8798;
+
+    // Aluminium
+    --aluminium: #aab1bb;
+
+    // Nepal
+    --nepal: #90a3bf;
+
+    // Botticelli
+    --botticelli: #d5dce8;
+
+    // Cloudy Sky
+    --cloudy-sky: #f6f7f9;
+
+    // Midnight Black
+    --midnight-black: #2c2c2c;
+
+    // Solitude
+    --solitude: #dce5ff;
+
+    // Mountain Meadow
+    --mountain-meadow: #12b76a;
+
+    // Porcelain
+    --porcelain: #f5f6f7;
+
+    // Cornflower Blue
+    --cornflower-blue: #7a77fd;
+
+    // Sunglow
+    --sunglow: #ffd231;
+
+    // *Reusable Elements*
+
+    // Background colors
+    --background-primary: var(--white-lilac);
+    --background-secondary: var(--st-tropaz);
+
+    // Text colors
+    --text-primary: var(--nepal);
+    --text-primary-dark: var(--steel-gray);
+    --text-secondary: var(--slate-gray);
+
+    // Action colors
+    --hover-primary: var(--azure);
+
+    // Shadow colors
+    --shadow-primary: #2e61ae65;
+    --shadow-secondary: #10161a33;
+
+    // Error colors
+    --error-primary: var(--torch-red);
+
+    // Header
+    --header-height: 72px;
+
+    // Sidebar
+    --sidebar-width: 80px;
+
+    // Avatar
+    --avatar-color: #7a77fd;
+    --avatar-online-color: var(--mountain-meadow);
+    --avatar-offline-color: var(--nepal);
+
+    // *Font*
+
+    // Font family
+    --font-family: "Inter", sans-serif;
+
+    // Font sizes
+    --font-size-h1: 42px;
+    --font-size-h2: 28px;
+    --font-size-h3: 26px;
+    --font-size-h4: 24px;
+    --font-size-h5: 18px;
+    --font-size-h6: 16px;
+    --font-size-menu: 18px;
+    --font-size-body: 14px;
+    --font-size-btn: 16px;
+    --font-size-base: 13px;
+    --font-size-caption: 12px;
+    --font-size-admin-avatar-badge: 10px;
+
+    // Line height
+    --line-height-btn: 1.17;
+    --line-height-main: 1.21;
+    --line-height-h2-h4: 1.35;
+    --line-height-h5-h6: 1.41;
+
+    // Letter spacings
+    --letter-spacing-sm: 0.15px;
+    --letter-spacing-md: 0.25px;
+    --letter-spacing-lg: 1.5px;
+
+    // Font weight
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+
+    // outline:
+    --outline: var(--botticelli);
+}

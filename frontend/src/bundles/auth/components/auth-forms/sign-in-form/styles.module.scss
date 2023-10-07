@@ -1,0 +1,27 @@
+.required {
+    color: var(--st-tropaz);
+}
+
+.authOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    height: unset;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    & .checkbox {
+        margin-left: -9px;
+        font-weight: bold;
+        font-size: var(--font-size-caption);
+    }
+
+    & .forgot {
+        width: unset;
+        color: var(--st-tropaz);
+        font-size: var(--font-size-body);
+        text-decoration: none;
+    }
+}

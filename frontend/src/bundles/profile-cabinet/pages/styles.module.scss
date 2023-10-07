@@ -1,0 +1,101 @@
+:root {
+    --talent-profile-form-width: 560px;
+}
+
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background-color: var(--white);
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pageTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-bottom: 1px solid var(--solitude);
+}
+
+.activeSearch {
+    display: flex;
+    align-items: center;
+
+    & .tooltip {
+        margin-left: 5px;
+    }
+
+    & .tooltip:hover {
+        background-color: var(--solitude);
+        cursor: pointer;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    min-width: max-content;
+    max-width: var(--talent-profile-form-width);
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.headNavigation {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 10px;
+    padding: 10px 0;
+    background-color: var(--white);
+}
+
+.tabNavigation {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white-lilac);
+    border-radius: 10px;
+}
+
+.profileButton {
+    width: 124px;
+    height: 36px;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-base);
+    text-transform: capitalize;
+}
+
+.saveButton {
+    color: var(--background-secondary);
+    border-color: var(--background-secondary);
+
+    &:hover {
+        border-color: var(--hover-primary);
+    }
+}
+
+.publishButton {
+    width: 134px;
+    text-transform: initial;
+    background-color: var(--background-secondary);
+
+    &:hover {
+        background-color: var(--hover-primary);
+    }
+}
+
+.stepContainer {
+    margin: 0 auto;
+}
+
+@media screen and (width <=760px) {
+    .form {
+        min-width: 100%;
+    }
+}

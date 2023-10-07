@@ -1,0 +1,183 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: var(--step-width);
+    padding: 10px;
+}
+
+.wideForm {
+    max-width: 100%;
+}
+
+.stepContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.stepTitle {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 170px;
+    padding-inline: 30px;
+    height: 60px;
+    border-bottom: 3px solid var(--solitude);
+
+    &::before {
+        position: absolute;
+        bottom: -2.5px;
+        left: 0;
+        padding-bottom: 3px;
+        background-color: var(--st-tropaz);
+        transition: all 0.5s ease;
+        content: "";
+    }
+
+    &.step1::before {
+        width: 20%;
+    }
+
+    &.step2::before {
+        width: 40%;
+    }
+
+    &.step3::before {
+        width: 60%;
+    }
+
+    &.step4::before {
+        width: 80%;
+    }
+
+    &.step5::before {
+        width: 100%;
+    }
+}
+
+.stepName {
+    color: var(--text-primary-dark);
+    font-weight: var(--font-weight-medium);
+    font-size: 20px;
+    letter-spacing: var(--letter-spacing-sm);
+}
+
+.stepNumber {
+    color: var(--st-tropaz);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+    letter-spacing: var(--letter-spacing-lg);
+    text-transform: uppercase;
+}
+
+.stepNumber::after {
+    content: " / 05";
+    color: var(--aluminium);
+    font-weight: var(--font-weight-regular);
+}
+
+.stepBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 40px;
+}
+
+.stepButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button {
+        width: 104px;
+        height: 36px;
+        margin: 5px;
+        font-weight: 500;
+        font-size: 13px;
+        text-transform: capitalize;
+    }
+}
+
+.buttonBack {
+    color: var(--hover-primary);
+    border-color: var(--hover-primary);
+
+    &:disabled {
+        color: var(--aluminium);
+        background-color: var(--background-primary);
+    }
+}
+
+.buttonNext {
+    background-color: var(--background-secondary);
+
+    &:hover {
+        background-color: var(--hover-primary);
+    }
+}
+
+.wideStepButtons {
+    display: flex;
+
+    .button {
+        width: 181px;
+        height: 36px;
+        margin: 7px;
+        font-size: 13px;
+        text-transform: none;
+    }
+
+    .buttonPlaceholder {
+        width: 181px;
+        height: 36px;
+        margin: 7px;
+    }
+}
+
+.stepOutlet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (width <=660px) {
+    .stepName {
+        font-size: 15px;
+    }
+
+    .stepNumber {
+        font-size: 12px;
+    }
+
+    .stepButtons {
+        display: flex;
+
+        .button {
+            width: 60px;
+        }
+
+        .buttonPlaceholder {
+            width: 60px;
+        }
+    }
+
+    .wideStepButtons {
+        .button {
+            width: 120px;
+            height: 50px;
+        }
+
+        .buttonPlaceholder {
+            width: 120px;
+            height: 50px;
+        }
+    }
+
+    .stepBody {
+        padding: 0;
+    }
+}

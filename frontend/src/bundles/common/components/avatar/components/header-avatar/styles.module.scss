@@ -1,0 +1,17 @@
+.headerAvatar {
+    border-radius: 50%;
+}
+
+.badge {
+    color: var(--white);
+    font-size: var(--font-size-admin-avatar-badge);
+    box-shadow: 0 0 0 2px #ffffff;
+}
+
+.badgeOnline {
+    background-color: var(--avatar-online-color);
+}
+
+.badgeOffline {
+    background-color: var(--avatar-offline-color);
+}
